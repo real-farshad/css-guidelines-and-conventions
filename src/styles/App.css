@@ -1,0 +1,90 @@
+:root {
+    /* Font sizes */
+    --standard-font-size: 16px;
+
+    /* Font weights */
+    --regular-font-weight: 400;
+    --medium-font-weight: 500;
+    --semi-bold-font-weight: 600;
+    --bold-font-weight: 700;
+
+    /* Colors */
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --accent-color: rgb(255, 174, 41);
+
+    /* Widths */
+    --max-content-width-xl: 1260px;
+
+    /* Paddings */
+    --content-padding: 24px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: var(--standard-font-size);
+    font-weight: var(--regular-font-weight);
+    color: var(--black);
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        --content-padding: 48px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    :root {
+        --standard-font-size: 17px;
+        --content-padding: 50px;
+    }
+}
