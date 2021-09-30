@@ -11,6 +11,7 @@
     /* Colors */
     --black: rgb(0, 0, 0);
     --white: rgb(255, 255, 255);
+    --secondary-background-color: rgb(247, 247, 247);
     --accent-color: rgb(255, 174, 41);
 
     /* Widths */

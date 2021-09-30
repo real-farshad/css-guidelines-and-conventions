@@ -64,7 +64,7 @@ export default function Navbar() {
                         <div className="close-icon__line" />
                     </div>
 
-                    <p className="close-menu__text">Close menu</p>
+                    <p className="close-menu__text">Close Menu</p>
                 </div>
 
                 <ul className="navigation">
