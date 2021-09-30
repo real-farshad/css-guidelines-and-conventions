@@ -1,14 +1,8 @@
 import { useState } from "react";
 import "../styles/Navbar.css";
 
-interface menuInterface {
-    isOpen: boolean;
-    startOpenAnimation: boolean;
-    startCloseAnimation: boolean;
-}
-
 export default function Navbar() {
-    const [menu, setMenu] = useState<menuInterface>({
+    const [menu, setMenu] = useState({
         isOpen: false,
         startOpenAnimation: false,
         startCloseAnimation: false,
