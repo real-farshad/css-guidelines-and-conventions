@@ -13,6 +13,7 @@
     --white: rgb(255, 255, 255);
     --secondary-background-color: rgb(247, 247, 247);
     --accent-color: rgb(255, 174, 41);
+    --standard-link-text-color: rgb(40, 151, 255);
 
     /* Widths */
     --max-content-width-xl: 1260px;

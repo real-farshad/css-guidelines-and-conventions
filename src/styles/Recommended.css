@@ -1,0 +1,231 @@
+.secondary-background {
+    background-color: var(--secondary-background-color);
+}
+
+.recommended {
+    --preview-padding: 7%;
+    --preview-image-width: 93%;
+    --preview-image-height: 450px;
+
+    padding: var(--content-padding);
+    padding-bottom: 50px;
+}
+
+.recommended__preview {
+    position: relative;
+    padding: var(--preview-padding) 0 0 var(--preview-padding);
+    margin-bottom: 30px;
+}
+
+.recommended__preview--reverse-layout {
+    padding: var(--preview-padding) var(--preview-padding) 0 0;
+}
+
+.recommended__preview-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--preview-image-width);
+    height: var(--preview-image-height);
+    border: 4px solid;
+}
+
+.recommended__preview-frame--reverse-layout {
+    left: unset;
+    right: 0;
+}
+
+.recommended__preview-image-container {
+    position: relative;
+    width: 100%;
+    height: var(--preview-image-height);
+}
+
+.recommended__preview-image,
+.recommended__preview-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.recommended__preview-image img {
+    object-fit: cover;
+}
+
+.recommended__preview-image-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+    opacity: 0.3;
+}
+
+.recommended__info-sm {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 23px;
+}
+
+.recommended__category,
+.recommended__title {
+    color: var(--white);
+    font-weight: var(--semi-bold-font-weight);
+}
+
+.recommended__category {
+    font-size: 18px;
+    margin-bottom: 7px;
+    opacity: 0.6;
+}
+
+.recommended__title {
+    font-size: 28px;
+    opacity: 0.87;
+}
+
+.recommended__title-keyword {
+    display: block;
+    color: var(--accent-color);
+}
+
+.recommended__info-md-and-larger {
+    display: none;
+}
+
+.recommended__brief,
+.recommended__description {
+    line-height: 1.4;
+}
+
+.recommended__brief {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.recommended__description {
+    margin-bottom: 25px;
+}
+
+.recommended__description-text {
+    margin-bottom: 15px;
+}
+
+.recommended__link {
+    font-weight: var(--medium-font-weight);
+    display: flex;
+    align-items: center;
+    color: var(--standard-link-text-color);
+}
+
+.recommended__link-line {
+    display: inline-block;
+    width: 60px;
+    height: 1.75px;
+    background-color: var(--standard-link-text-color);
+    margin-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .recommended {
+        --preview-padding: 25px;
+        --preview-image-width: 250px;
+        --preview-image-height: 400px;
+
+        display: flex;
+        gap: 7%;
+        padding: 60px 10%;
+        padding-bottom: 70px;
+        margin: auto;
+    }
+
+    .recommended__reverse-layout {
+        flex-direction: row-reverse;
+    }
+
+    .recommended__preview {
+        margin-bottom: 0;
+    }
+
+    .recommended__preview-image-container {
+        width: var(--preview-image-width);
+    }
+
+    .recommended__preview-image {
+        overflow: hidden;
+    }
+
+    .recommended__preview-image img {
+        transition: 300ms;
+    }
+
+    .recommended__preview-image-container:hover .recommended__preview-image img {
+        transform: scale(1.1);
+    }
+
+    .recommended__preview-image-shade {
+        display: none;
+    }
+
+    .recommended__info-sm {
+        display: none;
+    }
+
+    .recommended__info {
+        margin-top: 25px;
+    }
+
+    .recommended__info-md-and-larger {
+        display: block;
+    }
+
+    .recommended__category,
+    .recommended__title {
+        color: var(--black);
+    }
+
+    .recommended__category {
+        margin-bottom: 7px;
+        opacity: 0.3;
+    }
+
+    .recommended__title {
+        margin-bottom: 20px;
+        opacity: 1;
+    }
+
+    .recommended__title-keyword {
+        display: inline-block;
+        color: var(--accent-color);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .recommended {
+        --preview-padding: 35px;
+        --preview-image-width: 350px;
+        --preview-image-height: 525px;
+
+        gap: 100px;
+        padding: 90px var(--content-padding);
+        max-width: 1050px;
+    }
+
+    .recommended__info {
+        margin-top: 35px;
+    }
+
+    .recommended__category {
+        font-size: 20px;
+    }
+
+    .recommended__title {
+        font-size: 34px;
+    }
+
+    .recommended__brief {
+        font-size: 22px;
+    }
+}
