@@ -7,7 +7,7 @@
     --preview-image-width: 93%;
     --preview-image-height: 450px;
 
-    padding: var(--content-padding);
+    padding: var(--content-space);
     padding-bottom: 50px;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .recommended__title {
-    font-size: 28px;
+    font-size: var(--standard-title-font-size);
     opacity: 0.87;
 }
 
@@ -209,7 +209,7 @@
         --preview-image-height: 525px;
 
         gap: 100px;
-        padding: 90px var(--content-padding);
+        padding: 90px var(--content-space);
         max-width: 1050px;
     }
 
@@ -222,7 +222,7 @@
     }
 
     .recommended__title {
-        font-size: 34px;
+        font-size: var(--standard-title-font-size);
     }
 
     .recommended__brief {

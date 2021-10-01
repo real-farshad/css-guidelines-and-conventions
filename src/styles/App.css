@@ -1,6 +1,7 @@
 :root {
     /* Font sizes */
     --standard-font-size: 16px;
+    --standard-title-font-size: 28px;
 
     /* Font weights */
     --regular-font-weight: 400;
@@ -19,7 +20,7 @@
     --max-content-width-xl: 1260px;
 
     /* Paddings */
-    --content-padding: 24px;
+    --content-space: 24px;
 }
 
 *,
@@ -80,13 +81,14 @@ button {
 
 @media only screen and (min-width: 768px) {
     :root {
-        --content-padding: 48px;
+        --content-space: 48px;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     :root {
         --standard-font-size: 17px;
-        --content-padding: 50px;
+        --standard-title-font-size: 34px;
+        --content-space: 50px;
     }
 }

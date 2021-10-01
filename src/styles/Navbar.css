@@ -7,7 +7,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding: var(--content-padding);
+    padding: var(--content-space);
     z-index: 99;
 }
 
@@ -129,7 +129,7 @@
     .navbar {
         position: static;
         flex-direction: row;
-        padding: 24px var(--content-padding);
+        padding: 24px var(--content-space);
     }
 
     .navbar__brand {
@@ -190,7 +190,7 @@
 @media only screen and (min-width: 1200px) {
     .navbar {
         max-width: var(--max-content-width-xl);
-        padding: 40px var(--content-padding);
+        padding: 40px var(--content-space);
         margin: auto;
     }
 
