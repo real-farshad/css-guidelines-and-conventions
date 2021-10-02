@@ -1,5 +1,5 @@
 .explore {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 
 .explore__thumbnail {
@@ -120,7 +120,7 @@
     }
 
     .explore__thumbnail:hover .explore__thumbnail-image img {
-        transform: scale(1.1);
+        transform: scale(1.2);
     }
 
     .explore__title-container {

@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Recommended from "./components/Recommended";
 import Popular from "./components/Popular";
 import Explore from "./components/Explore";
-import Footer from "./components/Footer";
+import Copyright from "./components/Copyright";
 import "./styles/App.css";
 
 function App() {
@@ -56,7 +56,9 @@ function App() {
                 <Explore />
             </main>
 
-            <Footer />
+            <footer>
+                <Copyright />
+            </footer>
         </>
     );
 }
