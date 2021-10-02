@@ -1,6 +1,7 @@
 import lastOfUsPart2 from "./assets/last-of-us-part-2.jpg";
 import mortalKombat11 from "./assets/mortal-kombat-11.jpg";
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Intro from "./components/Intro";
 import Recommended from "./components/Recommended";
 import Popular from "./components/Popular";
 import Explore from "./components/Explore";
@@ -44,12 +45,16 @@ function App() {
 
     return (
         <>
-            <Header />
+            <header>
+                <Navbar />
+
+                <Intro />
+            </header>
 
             <main>
-                <Recommended data={recomendations[0]} reverseLayout={false} backgroundColor={true} darkenImage={false} />
+                <Recommended data={recomendations[0]} reverseLayout={false} backgroundColor={true} />
 
-                <Recommended data={recomendations[1]} reverseLayout={true} backgroundColor={false} darkenImage={true} />
+                <Recommended data={recomendations[1]} reverseLayout={true} backgroundColor={false} />
 
                 <Popular />
 

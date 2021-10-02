@@ -51,16 +51,6 @@
     object-fit: cover;
 }
 
-.recommended__preview-image-shade {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--black);
-    opacity: 0.3;
-}
-
 .recommended__info-sm {
     position: absolute;
     bottom: 0;
@@ -163,10 +153,6 @@
 
     .recommended__preview-image-container:hover .recommended__preview-image img {
         transform: scale(1.1);
-    }
-
-    .recommended__preview-image-shade {
-        display: none;
     }
 
     .recommended__info-sm {

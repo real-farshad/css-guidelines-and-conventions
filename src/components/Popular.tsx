@@ -22,7 +22,7 @@ export default function Popular() {
                         </p>
 
                         <a className="popular__link" href="#">
-                            Show More <span className="popular__link-line" />
+                            See More <span className="popular__link-line" />
                         </a>
                     </div>
                 </div>

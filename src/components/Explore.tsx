@@ -11,31 +11,31 @@ export default function Explore() {
             <div className="explore">
                 <div className="explore__thumbnail explore__thumbnail--first">
                     <div className="explore__thumbnail-image">
-                        <img src={firstThumbnail} />
+                        <img src={firstThumbnail} alt="first thumbnail" />
                     </div>
                 </div>
 
                 <div className="explore__thumbnail explore__thumbnail--second">
                     <div className="explore__thumbnail-image">
-                        <img src={secondThumbnail} />
+                        <img src={secondThumbnail} alt="second thumbnail" />
                     </div>
                 </div>
 
                 <div className="explore__thumbnail explore__thumbnail--third">
                     <div className="explore__thumbnail-image">
-                        <img src={thirdThumbnail} />
+                        <img src={thirdThumbnail} alt="third thumbnail" />
                     </div>
                 </div>
 
                 <div className="explore__thumbnail explore__thumbnail--fourth">
                     <div className="explore__thumbnail-image">
-                        <img src={fourthThumbnail} />
+                        <img src={fourthThumbnail} alt="fourth thumbnail" />
                     </div>
                 </div>
 
                 <div className="explore__thumbnail explore__thumbnail--fifth">
                     <div className="explore__thumbnail-image">
-                        <img src={fifthThumbnail} />
+                        <img src={fifthThumbnail} alt="fifth thumbnail" />
                     </div>
                 </div>
 

@@ -48,9 +48,9 @@ export default function Navbar() {
             </a>
 
             <div className="navbar__menu-icon" onClick={openMenu}>
-                <div className="menu-icon__line" />
-                <div className="menu-icon__line" />
-                <div className="menu-icon__line" />
+                <div className="navbar__menu-icon-line" />
+                <div className="navbar__menu-icon-line" />
+                <div className="navbar__menu-icon-line" />
             </div>
 
             <div
@@ -58,29 +58,29 @@ export default function Navbar() {
                     menu.startOpenAnimation ? "navbar__menu--animate-in" : ""
                 } ${menu.startCloseAnimation ? "navbar__menu--animate-out" : ""}`}
             >
-                <div className="menu__close-menu" onClick={closeMenu}>
-                    <div className="close-icon">
-                        <div className="close-icon__line" />
-                        <div className="close-icon__line" />
+                <div className="navbar__close-menu" onClick={closeMenu}>
+                    <div className="navbar__close-icon">
+                        <div className="navbar__close-icon-line" />
+                        <div className="navbar__close-icon-line" />
                     </div>
 
                     <p className="close-menu__text">Close Menu</p>
                 </div>
 
-                <ul className="navigation">
-                    <li className="navigation__link">
+                <ul className="navbar__nav">
+                    <li className="navbar__nav-link">
                         <a href="#">Home</a>
                     </li>
 
-                    <li className="navigation__link">
+                    <li className="navbar__nav-link">
                         <a href="#">About</a>
                     </li>
 
-                    <li className="navigation__link">
+                    <li className="navbar__nav-link">
                         <a href="#">Contact</a>
                     </li>
 
-                    <li className="navigation__link navigation__link--button">
+                    <li className="navbar__nav-link navbar__nav-link--button">
                         <a href="#">Login</a>
                     </li>
                 </ul>

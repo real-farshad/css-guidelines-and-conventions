@@ -75,6 +75,7 @@
 }
 
 .arrow-icon__line {
+    display: block;
     height: 2px;
     background-color: rgb(40, 151, 255);
     border-radius: 99px;

@@ -21,6 +21,7 @@
 
 .explore__thumbnail-image img {
     object-fit: cover;
+    object-position: center 15%;
 }
 
 .explore__title-container,
@@ -116,6 +117,7 @@
     }
 
     .explore__thumbnail-image img {
+        object-position: center center;
         transition: 300ms;
     }
 

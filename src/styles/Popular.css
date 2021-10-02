@@ -6,17 +6,19 @@
     position: relative;
 }
 
-.popular__wallpaper {
-    position: absolute;
-    top: 0;
-    left: 0;
+.popular__wallpaper,
+.popular__wallpaper img {
     width: 100%;
     height: 100%;
 }
 
+.popular__wallpaper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .popular__wallpaper img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -45,7 +47,7 @@
 .popular__title {
     font-weight: var(--semi-bold-font-weight);
     font-size: var(--standard-title-font-size);
-    padding-bottom: 300px;
+    padding-bottom: 330px;
     margin-bottom: 20px;
     opacity: 0.87;
 }

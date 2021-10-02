@@ -15,10 +15,9 @@ interface propsInterface {
     };
     reverseLayout: boolean;
     backgroundColor: boolean;
-    darkenImage: boolean;
 }
 
-export default function Recommended({ data, reverseLayout, backgroundColor, darkenImage }: propsInterface) {
+export default function Recommended({ data, reverseLayout, backgroundColor }: propsInterface) {
     return (
         <section className={backgroundColor ? "secondary-background" : ""}>
             <div className={`recommended ${reverseLayout ? "recommended__reverse-layout" : ""}`}>
@@ -31,8 +30,6 @@ export default function Recommended({ data, reverseLayout, backgroundColor, dark
                         <div className="recommended__preview-image">
                             <img src={data.image_src} alt={`${data.title.text} ${data.title.keyword}`} />
                         </div>
-
-                        {darkenImage && <div className="recommended__preview-image-shade" />}
 
                         <div className="recommended__info-sm">
                             <p className="recommended__category">{data.category}</p>
