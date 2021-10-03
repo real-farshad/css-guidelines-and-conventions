@@ -14,17 +14,18 @@ interface propsInterface {
         frameColor: string;
     };
     reverseLayout: boolean;
-    backgroundColor: boolean;
+    addBackgroundColor: boolean;
 }
 
-export default function Recommended({ data, reverseLayout, backgroundColor }: propsInterface) {
+export default function Recommended({ data, reverseLayout, addBackgroundColor }: propsInterface) {
     return (
-        <section className={backgroundColor ? "secondary-background" : ""}>
+        <section className={addBackgroundColor ? "secondary-background" : ""}>
             <div className={`recommended ${reverseLayout ? "recommended__reverse-layout" : ""}`}>
                 <div className={`recommended__preview ${reverseLayout ? "recommended__preview--reverse-layout" : ""}`}>
                     <div
                         className={`recommended__preview-frame ${reverseLayout ? "recommended__preview-frame--reverse-layout" : ""}`}
                         style={{ borderColor: data.frameColor }}
+                        data-testid="recommended-frame"
                     />
                     <div className="recommended__preview-image-container">
                         <div className="recommended__preview-image">
@@ -55,7 +56,7 @@ export default function Recommended({ data, reverseLayout, backgroundColor }: pr
                     <div className="recommended__description">
                         {data.description.map((text, i) => {
                             return (
-                                <p className="recommended__description-text" key={i}>
+                                <p className="recommended__description-text" key={i} data-testid="recommended-description">
                                     {text}
                                 </p>
                             );

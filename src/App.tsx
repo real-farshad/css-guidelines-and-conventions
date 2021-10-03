@@ -52,9 +52,9 @@ function App() {
             </header>
 
             <main>
-                <Recommended data={recomendations[0]} reverseLayout={false} backgroundColor={true} />
+                <Recommended data={recomendations[0]} reverseLayout={false} addBackgroundColor={true} />
 
-                <Recommended data={recomendations[1]} reverseLayout={true} backgroundColor={false} />
+                <Recommended data={recomendations[1]} reverseLayout={true} addBackgroundColor={false} />
 
                 <Popular />
 
