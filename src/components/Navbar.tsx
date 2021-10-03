@@ -43,7 +43,7 @@ export default function Navbar() {
 
     return (
         <nav className="navbar">
-            <a href="#" className="navbar__brand">
+            <a href="/#" className="navbar__brand">
                 CO<span>MPLEXITY</span>
             </a>
 
@@ -69,19 +69,19 @@ export default function Navbar() {
 
                 <ul className="navbar__nav">
                     <li className="navbar__nav-link">
-                        <a href="#">Home</a>
+                        <a href="/#">Home</a>
                     </li>
 
                     <li className="navbar__nav-link">
-                        <a href="#">About</a>
+                        <a href="/#">About</a>
                     </li>
 
                     <li className="navbar__nav-link">
-                        <a href="#">Contact</a>
+                        <a href="/#">Contact</a>
                     </li>
 
                     <li className="navbar__nav-link navbar__nav-link--button">
-                        <a href="#">Login</a>
+                        <a href="/#">Login</a>
                     </li>
                 </ul>
             </div>

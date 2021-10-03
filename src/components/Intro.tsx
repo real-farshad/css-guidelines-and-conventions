@@ -21,7 +21,7 @@ export default function Header() {
                         <span className="intro__description-text">
                             Curabitur, Fringilla Lectus, Elementum Iaculis Quam. In Hac Habitasse Platea Dictumst
                         </span>{" "}
-                        <a href="#" className="arrow-icon">
+                        <a href="/#" className="arrow-icon">
                             <span className="arrow-icon__line arrow-icon__line--top" />
                             <span className="arrow-icon__line arrow-icon__line--middle" />
                             <span className="arrow-icon__line arrow-icon__line--bottom" />

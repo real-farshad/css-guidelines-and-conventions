@@ -50,7 +50,7 @@ export default function Explore() {
                         Maecenas malesuada ut urna sed rhoncus. Sed iaculis, risus ut ultricies vestibulum, odio tortor varius sapien, vel
                         cursus nunc lectus nec velit.
                     </p>
-                    <a className="explore__link" href="#">
+                    <a className="explore__link" href="/#">
                         More Details <span className="explore__link-line" />
                     </a>
                 </div>

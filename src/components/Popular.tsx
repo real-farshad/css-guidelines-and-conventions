@@ -21,7 +21,7 @@ export default function Popular() {
                             mollis ullamcorper in a est. Donec a purus tempus, aliquet felis ut, malesuada justo.
                         </p>
 
-                        <a className="popular__link" href="#">
+                        <a className="popular__link" href="/#">
                             See More <span className="popular__link-line" />
                         </a>
                     </div>
